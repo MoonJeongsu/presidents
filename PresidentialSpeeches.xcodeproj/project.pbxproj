@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A11B0010000000000000101 /* PresidentialSpeechesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000201 /* PresidentialSpeechesApp.swift */; };
+		9A11B0010000000000000102 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000202 /* ContentView.swift */; };
+		9A11B0010000000000000103 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000203 /* AppEnvironment.swift */; };
+		9A11B0010000000000000104 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000204 /* AppConfig.swift */; };
+		9A11B0010000000000000105 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000205 /* Models.swift */; };
+		9A11B0010000000000000106 /* ClientIdProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000206 /* ClientIdProvider.swift */; };
+		9A11B0010000000000000107 /* QuotaStores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000207 /* QuotaStores.swift */; };
+		9A11B0010000000000000108 /* TranslationCacheStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000208 /* TranslationCacheStore.swift */; };
+		9A11B0010000000000000109 /* SpeechBodyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000209 /* SpeechBodyFetcher.swift */; };
+		9A11B001000000000000010A /* SpeechRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B001000000000000020A /* SpeechRepository.swift */; };
+		9A11B001000000000000010B /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B001000000000000020B /* Repositories.swift */; };
+		9A11B001000000000000010C /* CloudApis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B001000000000000020C /* CloudApis.swift */; };
+		9A11B001000000000000010D /* TextHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B001000000000000020D /* TextHash.swift */; };
+		9A11B001000000000000010E /* SentenceSplitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B001000000000000020E /* SentenceSplitter.swift */; };
+		9A11B001000000000000010F /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B001000000000000020F /* NetworkMonitor.swift */; };
+		9A11B0010000000000000110 /* SentenceAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000210 /* SentenceAudioPlayer.swift */; };
+		9A11B0010000000000000111 /* SpeechDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000211 /* SpeechDetailViewModel.swift */; };
+		9A11B0010000000000000112 /* PresidentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000212 /* PresidentListView.swift */; };
+		9A11B0010000000000000113 /* SpeechListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000213 /* SpeechListView.swift */; };
+		9A11B0010000000000000114 /* SpeechDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000214 /* SpeechDetailView.swift */; };
+		9A11B0010000000000000115 /* NetworkRequiredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000215 /* NetworkRequiredView.swift */; };
+		9A11B0010000000000000116 /* presidents.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000301 /* presidents.json */; };
+		9A11B0010000000000000117 /* speeches_index.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000302 /* speeches_index.json */; };
+		9A11B0010000000000000118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000303 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9A11B0010000000000000005 /* PresidentialSpeeches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresidentialSpeeches.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A11B0010000000000000201 /* PresidentialSpeechesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentialSpeechesApp.swift; sourceTree = "<group>"; };
+		9A11B0010000000000000202 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9A11B0010000000000000203 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		9A11B0010000000000000204 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		9A11B0010000000000000205 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		9A11B0010000000000000206 /* ClientIdProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientIdProvider.swift; sourceTree = "<group>"; };
+		9A11B0010000000000000207 /* QuotaStores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaStores.swift; sourceTree = "<group>"; };
+		9A11B0010000000000000208 /* TranslationCacheStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationCacheStore.swift; sourceTree = "<group>"; };
+		9A11B0010000000000000209 /* SpeechBodyFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechBodyFetcher.swift; sourceTree = "<group>"; };
+		9A11B001000000000000020A /* SpeechRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRepository.swift; sourceTree = "<group>"; };
+		9A11B001000000000000020B /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		9A11B001000000000000020C /* CloudApis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudApis.swift; sourceTree = "<group>"; };
+		9A11B001000000000000020D /* TextHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHash.swift; sourceTree = "<group>"; };
+		9A11B001000000000000020E /* SentenceSplitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceSplitter.swift; sourceTree = "<group>"; };
+		9A11B001000000000000020F /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		9A11B0010000000000000210 /* SentenceAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceAudioPlayer.swift; sourceTree = "<group>"; };
+		9A11B0010000000000000211 /* SpeechDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechDetailViewModel.swift; sourceTree = "<group>"; };
+		9A11B0010000000000000212 /* PresidentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentListView.swift; sourceTree = "<group>"; };
+		9A11B0010000000000000213 /* SpeechListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechListView.swift; sourceTree = "<group>"; };
+		9A11B0010000000000000214 /* SpeechDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechDetailView.swift; sourceTree = "<group>"; };
+		9A11B0010000000000000215 /* NetworkRequiredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequiredView.swift; sourceTree = "<group>"; };
+		9A11B0010000000000000301 /* presidents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = presidents.json; sourceTree = "<group>"; };
+		9A11B0010000000000000302 /* speeches_index.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = speeches_index.json; sourceTree = "<group>"; };
+		9A11B0010000000000000303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A11B0010000000000000304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A11B0010000000000000008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A11B0010000000000000003 = {
+			isa = PBXGroup;
+			children = (
+				9A11B0010000000000000401 /* PresidentialSpeeches */,
+				9A11B0010000000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A11B0010000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A11B0010000000000000005 /* PresidentialSpeeches.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A11B0010000000000000401 /* PresidentialSpeeches */ = {
+			isa = PBXGroup;
+			children = (
+				9A11B0010000000000000201 /* PresidentialSpeechesApp.swift */,
+				9A11B0010000000000000202 /* ContentView.swift */,
+				9A11B0010000000000000203 /* AppEnvironment.swift */,
+				9A11B0010000000000000402 /* Config */,
+				9A11B0010000000000000403 /* Models */,
+				9A11B0010000000000000404 /* Data */,
+				9A11B0010000000000000405 /* API */,
+				9A11B0010000000000000406 /* Util */,
+				9A11B0010000000000000407 /* Audio */,
+				9A11B0010000000000000408 /* ViewModels */,
+				9A11B0010000000000000409 /* Views */,
+				9A11B001000000000000040A /* Resources */,
+				9A11B0010000000000000303 /* Assets.xcassets */,
+				9A11B0010000000000000304 /* Info.plist */,
+			);
+			path = PresidentialSpeeches;
+			sourceTree = "<group>";
+		};
+		9A11B0010000000000000402 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9A11B0010000000000000204 /* AppConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		9A11B0010000000000000403 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9A11B0010000000000000205 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9A11B0010000000000000404 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9A11B0010000000000000206 /* ClientIdProvider.swift */,
+				9A11B0010000000000000207 /* QuotaStores.swift */,
+				9A11B0010000000000000208 /* TranslationCacheStore.swift */,
+				9A11B0010000000000000209 /* SpeechBodyFetcher.swift */,
+				9A11B001000000000000020A /* SpeechRepository.swift */,
+				9A11B001000000000000020B /* Repositories.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9A11B0010000000000000405 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9A11B001000000000000020C /* CloudApis.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9A11B0010000000000000406 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9A11B001000000000000020D /* TextHash.swift */,
+				9A11B001000000000000020E /* SentenceSplitter.swift */,
+				9A11B001000000000000020F /* NetworkMonitor.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		9A11B0010000000000000407 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				9A11B0010000000000000210 /* SentenceAudioPlayer.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		9A11B0010000000000000408 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9A11B0010000000000000211 /* SpeechDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9A11B0010000000000000409 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A11B0010000000000000212 /* PresidentListView.swift */,
+				9A11B0010000000000000213 /* SpeechListView.swift */,
+				9A11B0010000000000000214 /* SpeechDetailView.swift */,
+				9A11B0010000000000000215 /* NetworkRequiredView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A11B001000000000000040A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9A11B0010000000000000301 /* presidents.json */,
+				9A11B0010000000000000302 /* speeches_index.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A11B0010000000000000002 /* PresidentialSpeeches */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A11B001000000000000000E /* Build configuration list for PBXNativeTarget "PresidentialSpeeches" */;
+			buildPhases = (
+				9A11B0010000000000000006 /* Sources */,
+				9A11B0010000000000000008 /* Frameworks */,
+				9A11B0010000000000000007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PresidentialSpeeches;
+			productName = PresidentialSpeeches;
+			productReference = 9A11B0010000000000000005 /* PresidentialSpeeches.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A11B0010000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					9A11B0010000000000000002 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 9A11B001000000000000000D /* Build configuration list for PBXProject "PresidentialSpeeches" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A11B0010000000000000003;
+			productRefGroup = 9A11B0010000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A11B0010000000000000002 /* PresidentialSpeeches */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A11B0010000000000000007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A11B0010000000000000116 /* presidents.json in Resources */,
+				9A11B0010000000000000117 /* speeches_index.json in Resources */,
+				9A11B0010000000000000118 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A11B0010000000000000006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A11B0010000000000000101 /* PresidentialSpeechesApp.swift in Sources */,
+				9A11B0010000000000000102 /* ContentView.swift in Sources */,
+				9A11B0010000000000000103 /* AppEnvironment.swift in Sources */,
+				9A11B0010000000000000104 /* AppConfig.swift in Sources */,
+				9A11B0010000000000000105 /* Models.swift in Sources */,
+				9A11B0010000000000000106 /* ClientIdProvider.swift in Sources */,
+				9A11B0010000000000000107 /* QuotaStores.swift in Sources */,
+				9A11B0010000000000000108 /* TranslationCacheStore.swift in Sources */,
+				9A11B0010000000000000109 /* SpeechBodyFetcher.swift in Sources */,
+				9A11B001000000000000010A /* SpeechRepository.swift in Sources */,
+				9A11B001000000000000010B /* Repositories.swift in Sources */,
+				9A11B001000000000000010C /* CloudApis.swift in Sources */,
+				9A11B001000000000000010D /* TextHash.swift in Sources */,
+				9A11B001000000000000010E /* SentenceSplitter.swift in Sources */,
+				9A11B001000000000000010F /* NetworkMonitor.swift in Sources */,
+				9A11B0010000000000000110 /* SentenceAudioPlayer.swift in Sources */,
+				9A11B0010000000000000111 /* SpeechDetailViewModel.swift in Sources */,
+				9A11B0010000000000000112 /* PresidentListView.swift in Sources */,
+				9A11B0010000000000000113 /* SpeechListView.swift in Sources */,
+				9A11B0010000000000000114 /* SpeechDetailView.swift in Sources */,
+				9A11B0010000000000000115 /* NetworkRequiredView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9A11B0010000000000000009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A11B001000000000000000A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A11B001000000000000000B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PresidentialSpeeches/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uspresident.speeches.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A11B001000000000000000C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PresidentialSpeeches/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uspresident.speeches.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A11B001000000000000000D /* Build configuration list for PBXProject "PresidentialSpeeches" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A11B0010000000000000009 /* Debug */,
+				9A11B001000000000000000A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A11B001000000000000000E /* Build configuration list for PBXNativeTarget "PresidentialSpeeches" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A11B001000000000000000B /* Debug */,
+				9A11B001000000000000000C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A11B0010000000000000001 /* Project object */;
+}
