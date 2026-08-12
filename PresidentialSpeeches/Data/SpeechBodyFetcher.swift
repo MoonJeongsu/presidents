@@ -31,9 +31,7 @@ final class SpeechBodyFetcher {
         }
 
         let objectPath = "speeches/\(speechId).txt"
-        var allowed = CharacterSet.urlPathAllowed
-        allowed.insert(charactersIn: "/")
-        let encodedPath = objectPath.addingPercentEncoding(withAllowedCharacters: allowed) ?? objectPath
+        let encodedPath = Self.encodeStorageObjectPath(objectPath)
         let urlString = "https://firebasestorage.googleapis.com/v0/b/\(bucket)/o/\(encodedPath)?alt=media"
         guard let url = URL(string: urlString) else {
             throw SpeechBodyError.invalidURL
@@ -55,6 +53,16 @@ final class SpeechBodyFetcher {
         cacheLock.unlock()
         return body
     }
+
+    /// Matches Android `URLEncoder.encode(path, UTF-8).replace("+", "%20")`.
+    private static func encodeStorageObjectPath(_ path: String) -> String {
+        let encoded = path.addingPercentEncoding(withAllowedCharacters: storageObjectAllowedCharacters) ?? path
+        return encoded.replacingOccurrences(of: "+", with: "%20")
+    }
+
+    private static let storageObjectAllowedCharacters = CharacterSet(
+        charactersIn: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_.~"
+    )
 }
 
 enum SpeechBodyError: LocalizedError {
