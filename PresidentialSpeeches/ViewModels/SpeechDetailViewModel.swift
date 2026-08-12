@@ -142,10 +142,8 @@ final class SpeechDetailViewModel: ObservableObject {
                     $0.isPlaying = true
                 }
                 audioPlayer.play(fileURL: audioFile) { [weak self] in
-                    self?.updateSentence(index) { sentence in
-                        var updated = sentence
-                        updated.isPlaying = false
-                        return updated
+                    self?.updateSentence(index) {
+                        $0.isPlaying = false
                     }
                 }
 
@@ -178,9 +176,12 @@ final class SpeechDetailViewModel: ObservableObject {
         }
     }
 
-    private func updateSentence(_ index: Int, transform: (SentenceUiState) -> SentenceUiState) {
+    private func updateSentence(_ index: Int, transform: (inout SentenceUiState) -> Void) {
         uiState.sentences = uiState.sentences.map { sentence in
-            sentence.index == index ? transform(sentence) : sentence
+            guard sentence.index == index else { return sentence }
+            var updated = sentence
+            transform(&updated)
+            return updated
         }
     }
 }
