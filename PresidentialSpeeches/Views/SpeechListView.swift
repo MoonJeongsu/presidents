@@ -36,14 +36,6 @@ struct SpeechListView: View {
                 .padding(.vertical, 8)
                 .background(Color(.systemBackground))
         }
-        .safeAreaInset(edge: .bottom) {
-            if AppConfig.showAds {
-                Text("Ad banner placeholder")
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 50)
-                    .background(Color(.systemGray6))
-            }
-        }
     }
 
     private func formatDisplayDate(_ isoDate: String) -> String {

@@ -28,6 +28,7 @@
 		9A11B0010000000000000113 /* SpeechListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000213 /* SpeechListView.swift */; };
 		9A11B0010000000000000114 /* SpeechDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000214 /* SpeechDetailView.swift */; };
 		9A11B0010000000000000115 /* NetworkRequiredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000215 /* NetworkRequiredView.swift */; };
+		9A11B0010000000000000119 /* AdMobViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000216 /* AdMobViews.swift */; };
 		9A11B0010000000000000116 /* presidents.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000301 /* presidents.json */; };
 		9A11B0010000000000000117 /* speeches_index.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000302 /* speeches_index.json */; };
 		9A11B0010000000000000118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A11B0010000000000000303 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		9A11B0010000000000000213 /* SpeechListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechListView.swift; sourceTree = "<group>"; };
 		9A11B0010000000000000214 /* SpeechDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechDetailView.swift; sourceTree = "<group>"; };
 		9A11B0010000000000000215 /* NetworkRequiredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequiredView.swift; sourceTree = "<group>"; };
+		9A11B0010000000000000216 /* AdMobViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobViews.swift; sourceTree = "<group>"; };
 		9A11B0010000000000000301 /* presidents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = presidents.json; sourceTree = "<group>"; };
 		9A11B0010000000000000302 /* speeches_index.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = speeches_index.json; sourceTree = "<group>"; };
 		9A11B0010000000000000303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				9A11B0010000000000000405 /* API */,
 				9A11B0010000000000000406 /* Util */,
 				9A11B0010000000000000407 /* Audio */,
+				9A11B001000000000000040B /* Ads */,
 				9A11B0010000000000000408 /* ViewModels */,
 				9A11B0010000000000000409 /* Views */,
 				9A11B001000000000000040A /* Resources */,
@@ -163,6 +166,14 @@
 				9A11B0010000000000000210 /* SentenceAudioPlayer.swift */,
 			);
 			path = Audio;
+			sourceTree = "<group>";
+		};
+		9A11B001000000000000040B /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				9A11B0010000000000000216 /* AdMobViews.swift */,
+			);
+			path = Ads;
 			sourceTree = "<group>";
 		};
 		9A11B0010000000000000408 /* ViewModels */ = {
@@ -285,6 +296,7 @@
 				9A11B0010000000000000113 /* SpeechListView.swift in Sources */,
 				9A11B0010000000000000114 /* SpeechDetailView.swift in Sources */,
 				9A11B0010000000000000115 /* NetworkRequiredView.swift in Sources */,
+				9A11B0010000000000000119 /* AdMobViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
